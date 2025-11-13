@@ -1,6 +1,5 @@
-# Will's Astronomy - Personal Website
+# Will's Astronomy - Professional Website
 
-A professional personal website for astronomy with a dark navy blue theme and retro aesthetic.
 
 ## Features
 
@@ -41,11 +40,7 @@ This website is designed for GitHub Pages. It will be automatically published at
 
 - **Typography**: Courier New monospace for retro feel
 
-- **Layout Features**:
-  - Box shadows with offset (no blur)
-  - Navigation with hover effects
-  - Grid gallery for astrophotography
-  - Formatted sections for CV and publications
+
 
 ## Local Development
 
@@ -80,4 +75,4 @@ python3 -m http.server 8080
 
 ## License
 
-© 2025 Will's Astronomy. All rights reserved.
+© 2025 Will Jarvis. All rights reserved.
