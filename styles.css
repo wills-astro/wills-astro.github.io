@@ -1,0 +1,330 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0a1628;
+    color: #f0f0f0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #162447;
+    border-bottom: 3px solid #f0f0f0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.site-title {
+    font-size: 2.5em;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.nav-menu li {
+    margin: 5px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #f0f0f0;
+    text-decoration: none;
+    background-color: #0a1628;
+    border: 2px solid #f0f0f0;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: #f0f0f0;
+    color: #0a1628;
+    box-shadow: 3px 3px 0 rgba(240, 240, 240, 0.3);
+    transform: translate(-2px, -2px);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 40px 0;
+}
+
+.content-section {
+    background-color: #162447;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 3px solid #f0f0f0;
+    box-shadow: 8px 8px 0 rgba(240, 240, 240, 0.1);
+}
+
+.content-section h2 {
+    font-size: 2em;
+    color: #f0f0f0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content-section h3 {
+    font-size: 1.5em;
+    color: #f0f0f0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-left: 4px solid #f0f0f0;
+    padding-left: 15px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.content-section ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.content-section li {
+    margin-bottom: 10px;
+}
+
+/* About Page Specific */
+.about-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.portrait-container {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.portrait {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #f0f0f0;
+    box-shadow: 8px 8px 0 rgba(240, 240, 240, 0.2);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Image Gallery (for Astrophotography) */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+    box-shadow: 6px 6px 0 rgba(240, 240, 240, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 0 rgba(240, 240, 240, 0.3);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Research Figures */
+.research-figure {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.research-figure img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #f0f0f0;
+    box-shadow: 6px 6px 0 rgba(240, 240, 240, 0.15);
+}
+
+.research-figure figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+/* Publications List */
+.publication-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #0a1628;
+    border-left: 4px solid #f0f0f0;
+}
+
+.publication-item h3 {
+    margin: 0 0 10px 0;
+    border: none;
+    padding: 0;
+}
+
+.publication-item .authors {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.publication-item .journal {
+    color: #d0d0d0;
+    margin-bottom: 10px;
+}
+
+/* Poetry and Writings */
+.poem,
+.writing-entry {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: #0a1628;
+    border: 2px solid #f0f0f0;
+}
+
+.poem h3,
+.writing-entry h3 {
+    margin: 0 0 15px 0;
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.poem-content {
+    white-space: pre-wrap;
+    font-style: italic;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* CV Sections */
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-entry {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(240, 240, 240, 0.3);
+}
+
+.cv-entry:last-child {
+    border-bottom: none;
+}
+
+.cv-entry h4 {
+    color: #f0f0f0;
+    margin-bottom: 5px;
+}
+
+.cv-entry .date {
+    color: #d0d0d0;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #162447;
+    border-top: 3px solid #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 1.8em;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .nav-menu a {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .portrait-container {
+        flex: 1 1 100%;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+}
+
+/* Retro Terminal Effect */
+.terminal-effect {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 2px rgba(240, 240, 240, 0.8);
+}
