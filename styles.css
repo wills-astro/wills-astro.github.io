@@ -199,6 +199,22 @@ main {
     color: #d0d0d0;
 }
 
+/* Simple Image Row (Outreach, etc.) */
+.image-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.image-row img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
 /* Publications List */
 .publication-item {
     margin-bottom: 25px;
@@ -321,7 +337,13 @@ footer p {
     .content-section {
         padding: 20px;
     }
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
+
 
 /* Retro Terminal Effect */
 .terminal-effect {
