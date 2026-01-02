@@ -209,7 +209,7 @@ main {
 
 .image-row img {
     max-width: 350px;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     border-radius: 6px;
 }
