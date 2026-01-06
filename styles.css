@@ -199,6 +199,14 @@ main {
     color: #d0d0d0;
 }
 
+.pdf-container {
+    margin-top: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+
 /* Simple Image Row (Outreach, etc.) */
 .image-row {
     display: flex;
